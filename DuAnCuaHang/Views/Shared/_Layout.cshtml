@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title </title>
+    <link rel="stylesheet" href="Site.css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+   
+</head>
+<body>
+    
+    <div  class="navbar navbar-inverse navbar-fixed-top" style=" background-color:slategray;  font-size:25px; color:blue;" >
+        <div class="container " >
+            <div class="navbar-header ">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Cửa Hàng SASHIMI", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse" >
+                <ul class="nav navbar-nav"style="float:left">
+                    <li>@Html.ActionLink("Trang Chủ", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Thực Đơn", "About", "Home")</li>
+                    <li>@Html.ActionLink("Khuyến Mãi", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Đặt Bàn", "Create", "DatBans")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer id="footer" class="footer-wrapper" style="float:right;">
+
+            <section class="section" id="section_397257625">
+               
+
+                
+
+
+                    <div class="row align-equal align-center" id="row-1867033267">
+
+
+                        <div id="col-1012802793" class="col medium-11 small-12 large-11">
+                            <div class="col-inner text-center">
+
+
+
+                                <div class="menuft">
+                                    <p style="text-align: center;"><span style="color: #282828; font-size: 90%;"><a href="http://sushiworld.com.vn/career/">Tuyển dụng</a>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="#">Chính sách bảo mật</a>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="#">Điều khoản</a>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="#">Liên hệ</a></span></p>
+                                </div>
+                                <p style="text-align: center;"><a href="http://www.facebook.com/sushiworld"><img class="wp-image-2052 alignnone" src="http://sushiworld.com.vn/wp-content/uploads/2020/10/facebook-logo.png" alt="facebook-logo" width="32" height="32"></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCBT5i4yHiwYu5fjGvyWqg9Q"><img class="wp-image-2053 alignnone" src="http://sushiworld.com.vn/wp-content/uploads/2020/10/youtube-logotype.png" alt="youtube-logotype" width="32" height="32"></a>&nbsp;&nbsp;<a href="https://www.instagram.com/sushiworld.com.vn/"><img class="wp-image-2054 alignnone" src="http://sushiworld.com.vn/wp-content/uploads/2020/10/instagram.png" alt="instagram" width="32" height="32"></a></p>
+                                <div class="row align-middle align-center" id="row-1617127898">
+
+
+                                    <div id="col-1181307459" class="col medium-6 small-6 large-6">
+                                        <div class="col-inner text-right">
+
+
+
+                                            <div class="ux-logo has-hover align-middle ux_logo inline-block" style="max-width: 100%!important; width: 203.61111111111px!important"><div class="ux-logo-link block image-" title="" href="" style="padding: 15px;"><img src="https://sushiworld.com.vn/wp-content/uploads/2020/10/logo-sushi-world.png" title="" alt="" class="ux-logo-image block" style="height:75px;"></div></div>
+
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div id="col-1399398767" class="col medium-6 small-12 large-6">
+                                        <div class="col-inner">
+
+
+
+                                            <p style="text-align: justify;"><span style="font-size: 90%;">Công ty TNHH Phan Thành Akuruhi<br></span><span style="font-size: 90%;">Địa chỉ : 124 Trần Quang Khải, Phường Tân Định, Quận 1, TP. Hồ Chí Minh<br></span><span style="font-size: 90%;">Mã số thuế : 0314193257</span></p>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row row-small align-equal align-center" id="row-1090118138">
+
+
+                                    <div id="col-3991152" class="col medium-4 small-12 large-4">
+                                        <div class="col-inner">
+
+
+
+                                            <p style="text-align: justify;"><strong>SUSHI WORLD TP.HỒ CHÍ MINH</strong></p>
+                                            <p style="text-align: justify;"><span style="font-size: 90%; color: #282828;">37 Phùng Khắc Khoan, P.Đakao, Q.1, HCM <br></span><span style="font-size: 90%; color: #282828;">Tel: (028) 3822 6252 </span></p>
+                                            <p style="text-align: justify;"><span style="font-size: 90%; color: #282828;">124 Trần Quang Khải, Tân Định, Q.1, HCM <br></span><span style="font-size: 90%; color: #282828;">Tel: (028) 3822 0898</span></p>
+                                            <p style="text-align: justify;"><span style="font-size: 90%; color: #282828;">15E Lê Thánh Tôn, P.Bến Nghé, Q.1, HCM <br></span><span style="font-size: 90%; color: #282828;">Tel: (028) 3823 5089</span></p>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div id="col-341876259" class="col medium-4 small-12 large-4">
+                                        <div class="col-inner "style="float:right;">
+
+
+
+                                            <p style="text-align: justify; "><strong>SUSHI WORLD TP.HỒ CHÍ MINH</strong></p>
+                                            <p style="text-align: justify;"><span style="font-size: 90%;">25 Tôn Thất Thiệp, P.Bến nghé, Quận 1, HCM <br></span><span style="font-size: 90%;">Tel: (028) 3821 1462 </span></p>
+                                            <p style="text-align: justify;"><span style="font-size: 90%;">Tầng 2, 202 Hoàng Văn Thụ, Q. Phú Nhuận, HCM <br></span><span style="font-size: 90%;">Tel: (028) 3842 0228 </span></p>
+                                            <p style="text-align: justify;"><span style="font-size: 90%;">779 Quốc Lộ 22, Thị Trấn Củ Chi, HCM <br></span><span style="font-size: 90%;">Tel: (028) 3790 6262 </span></p>
+
+                                        </div>
+                                    </div>
+
+
+
+                                   
+
+
+                                </div>
+                                <div class="row row-small align-equal align-center" id="row-998681597">
+
+
+                                    <div id="col-805959153" class="col medium-11 small-12 large-11">
+                                        <div class="col-inner">
+
+
+
+                                            <p style="text-align: center;">Hệ thống Nhà Hàng nhật Sushi World - Hệ thống của Siêu thị nhật Akuruhi<br>www.sushiworld.com.vn -&nbsp; www.akuruhi.com - Hotline: 0937 070707</p>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+             
+
+
+                <style>
+                    #section_397257625 {
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                    }
+
+                        #section_397257625 .section-bg.bg-loaded {
+                            background-image: url(https://sushiworld.com.vn/wp-content/uploads/2020/10/background.jpg);
+                        }
+                </style>
+            </section>
+
+            <div class="absolute-footer dark medium-text-center small-text-center">
+                <div class="container clearfix">
+
+
+                    <div class="footer-primary pull-left">
+                        <div class="copyright-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline hide-for-medium circle active" id="top-link"><i class="icon-angle-up"></i></a>
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

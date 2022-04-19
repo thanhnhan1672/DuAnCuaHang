@@ -1,0 +1,50 @@
+﻿@model DuAnCuaHang.Models.DatBan
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DatBan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.ActionLink("Nhập họ tên", "Index", new { sortProperty = "Title", sortOrder = ViewBag.SortOrder })
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.ActionLink("Ngày đặt", "Index", new { sortProperty = "ReleaseDate", sortOrder = ViewBag.SortOrder })
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+        <dt>
+            @Html.ActionLink("Số Đt", "Index", new { sortProperty = "ReleaseDate", sortOrder = ViewBag.SortOrder })
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+        <dt>
+            @Html.ActionLink("Combo Giá", "Index", new { sortProperty = "ReleaseDate", sortOrder = ViewBag.SortOrder })
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Quay trở về", "Index")
+</p>
